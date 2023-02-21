@@ -27,4 +27,16 @@ public class SolicitudServiceImp implements ISolicitudService{
 		return Flux.fromStream(solicitudDao.findAll().stream());
 	}
 
+	@Override
+	public Mono<Solicitud> buscarSolicitud(Long id) {
+		// TODO Auto-generated method stub
+		return Mono.just(solicitudDao.findById(id).orElse(null));
+	}
+
+	@Override
+	public Mono<Solicitud> update(Solicitud solicitud) {
+		// TODO Auto-generated method stub
+		return Mono.just(solicitudDao.save(solicitud));
+	}
+
 }

@@ -26,7 +26,7 @@ public class TipoCambioController {
 	}
 	
 	@GetMapping("/{id}")
-	public Mono<TipoCambio> buscarPorId(@PathVariable String id){
+	public Mono<TipoCambio> buscarPorId(@PathVariable Long id){
 		return tipoCambioService.buscarTipoPorId(id);
 	}
 	

@@ -41,7 +41,7 @@ public class TipoCambioServiceImp implements ITipoCambioService{
 	}
 
 	@Override
-	public Mono<TipoCambio> buscarTipoPorId(String id) {
+	public Mono<TipoCambio> buscarTipoPorId(Long id) {
 		// TODO Auto-generated method stub
 		return Mono.just(tipoCambioDao.findById(id).orElse(null));
 	}

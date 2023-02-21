@@ -33,7 +33,7 @@ public class ClienteController {
 	}
 	
 	@GetMapping("/{id}")
-	public Mono<Cliente> listarClientesPorId(@PathVariable String id){
+	public Mono<Cliente> listarClientesPorId(@PathVariable Long id){
 		return clienteService.buscarClientePorId(id);
 	}
 	

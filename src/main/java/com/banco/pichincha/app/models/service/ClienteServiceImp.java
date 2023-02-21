@@ -42,7 +42,7 @@ public class ClienteServiceImp implements IClienteService{
 	}
 
 	@Override
-	public Mono<Cliente> buscarClientePorId(String id) {
+	public Mono<Cliente> buscarClientePorId(Long id) {
 		// TODO Auto-generated method stub
 		return Mono.just(solicitanteDao.findById(id).orElse(null));
 	}

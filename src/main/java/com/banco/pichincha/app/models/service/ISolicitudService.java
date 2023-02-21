@@ -8,4 +8,6 @@ import reactor.core.publisher.Mono;
 public interface ISolicitudService {
    public Mono<Solicitud> save(Solicitud solicitud);
    public Flux<Solicitud> listarSolicitud();
+   public Mono<Solicitud> buscarSolicitud(Long id);
+   public Mono<Solicitud> update(Solicitud solicitud);
 }

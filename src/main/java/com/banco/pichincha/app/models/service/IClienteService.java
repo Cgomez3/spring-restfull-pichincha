@@ -8,6 +8,6 @@ import reactor.core.publisher.Mono;
 public interface IClienteService {
 	public Flux<Cliente> listaClientes();
 	public Mono<Cliente> buscarClientePorDni(String dni);
-	public Mono<Cliente> buscarClientePorId(String id);
+	public Mono<Cliente> buscarClientePorId(Long id);
 	public Mono<Cliente> insertarCliente(Cliente cliente);
 }
