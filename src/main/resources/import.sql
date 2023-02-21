@@ -1,0 +1,1 @@
+INSERT INTO clientes (dni,nombre)VALUES('43506180','Cristhian Gomez');
